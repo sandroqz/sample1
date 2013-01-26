@@ -1,0 +1,2 @@
+$("div#dialogFrame").remove();
+$("<div/>").attr("id", "dialogFrame").append($("<%= j render file: 'tasks/new.html.erb', layout: false %>")).dialog({autoOpen: true});

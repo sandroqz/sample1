@@ -1,3 +1,43 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.rounded {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border-style: thin;
+  border-color: black;
+  border: 2px 2px 2px 2px;
+  display: block;
+  -webkit-box-shadow: #666 0px 2px 3px;
+  -moz-box-shadow: #666 0px 2px 3px;
+}
+header {
+  height: 50px;
+  top: 0;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  h1 {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+footer {
+  height: 50px;
+  bottom: 0;
+  display: block;
+  position: absolute;
+}
+#content {
+  top: 60px;
+  bottom: 60px;
+  position: absolute;
+  padding: 10px 10px 10px 10px;
+}
+.ui-dialog {
+  width: 430px !important;
+}
+a[href='/tasks'] {
+  display: none;
+}

@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sample1</title>
+  <title>Simple Task Manager</title>
+  <%= stylesheet_link_tag "blueprint/screen", media: 'screen' %>
+  <%= stylesheet_link_tag "blueprint/print", media: 'print' %>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="container" class="container">
+    <header class="span-24 rounded">
+      <h1>Simple Task Manager</h1>
+    </header>
+    <section id="content" class="span-24 rounded">
+      <%= yield %>
+    </section>
+    <footer class="span-24 rounded">
+      <p>
+        Exemplo do Livro do Urubatan
+      </p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,7 @@
+$("div#dialogFrame").remove();
+<% if @task.errors.any? %>
+  $("<div/>").attr("id", "dialogFrame").append($("<%= j render file: 'tasks/new.html.erb', layout: false %>")).dialog({autoOpen: true});
+<% else %>
+  $("section table tbody").children().remove();
+  $("section table tbody").append("<%= j render @tasks %>");
+<% end %>

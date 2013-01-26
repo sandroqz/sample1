@@ -1,0 +1,7 @@
+<tr>
+  <td><%= task.title %></td>
+  <td><%= task.description %></td>
+  <td><%= task.completed %></td>
+  <td><%= link_to 'Edit', edit_task_path(task), remote: true %></td>
+  <td><%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete, remote: true %></td>
+</tr>
